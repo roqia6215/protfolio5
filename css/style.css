@@ -1,0 +1,398 @@
+ .last,.first{
+    text-align: center;
+    padding: 20px;
+    background-image:linear-gradient(to right, #01796F, #049b8a);
+    color: hsl(36, 12%, 92%) ;
+}
+.header{
+    background: linear-gradient(to right, #01796F, #049b8a);
+    color: white;
+    padding: 60px 80px;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo span {
+    color: #FEE12B;
+}
+
+.small {
+    color: #FEE12B;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.desc {
+    font-size: 18px;
+    max-width: 600px;
+}
+nav {
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+    background:rgb(255, 255, 255 );
+    padding: 15px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    background: transparent; 
+    font-size: 18px;
+}
+nav a:hover {
+    background:#D6CFC7;
+    transform: scale(1.1);
+}
+.wel{
+    text-align: center;
+    padding: 40px;
+    background:white;
+    color:black;
+    width: 50%;
+    margin: 133px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.wel h2{
+    font-size: 32px;
+    margin: 10px;
+}
+.wel p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+.card {
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.circle {
+    background: #e53935;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+    font-weight: bold;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+.card:hover {
+     background:#D6CFC7;
+    transform: translateY(-2px);
+    text-decoration: none;
+    transition: 0.3s;
+    transform: scale(1.1);   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+main{
+    flex: 1;
+}
+.wel:hover{ 
+    background:#D6CFC7;
+    transform: translateY(-2px);
+    text-decoration: none;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.me{
+    justify-content:center;
+    text-align: center;
+    color:black 
+}
+table{
+    width: 80%;
+    height: 50vh;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 12px; 
+    border: 5px solid #f4f4f4; 
+    overflow: hidden;
+}
+table:hover{
+    box-shadow: 0 10px 20px rgba(0,  0,  0,  0.2);
+    transform: scale(1.02);
+    transition: 0.3s;
+    text-decoration: none; 
+    transform: translateY(-2px);
+}
+th{
+    background: #D6CFC7;
+    color: black;
+    font-size: 20px;
+}
+.col2, .col4, .col6{
+    background:#f4f4f4;
+    color: black;
+}
+td{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+td:hover {
+    background-color: #d0cfcf; 
+    color: #000;
+}
+.add{
+    justify-content:center;
+    text-align: center;
+    color:black 
+}
+label{
+    color: #000;
+    font-size: 25px;
+}
+.for,.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* عمودين */
+    gap: 20px;
+    width: 50%;
+    margin: 60px auto;
+    justify-content: center;
+}
+.not {
+    grid-column: span 2;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -70px;
+}
+.for-grid div,
+.form-grid div {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 5px solid #f4f4f4;
+    height: 200px;
+    width: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+textarea:hover{
+    background-color: white; 
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15)
+}
+/* 1. تنسيق أساسي لكل خانات الإدخال والقوائم المنسدلة */
+input[type="text"],
+select,
+input[type="email"] {
+    width: 280px; /* جعل الخانات أكبر (مش صغيرة) */
+    padding: 12px 20px; /* مسافة داخلية تخلي الكلام مريح (واسعة) */
+    margin: 10px 0; /* مسافة خارجية بين الخانات */
+    
+    /* 2. جعل الحواف دائرية (Rounded) */
+    border-radius: 25px; 
+    
+    /* 3. الخط والحدود (غير التخين) */
+    border: 5px solid #f4f4f4; /* خط رفيع جداً ولونه هادي */
+    font-size: 16px; /* تكبير خط الكتابة */
+    
+    /* 4. لون الخلفية الافتراضي (اختياري) */
+    background-color: #f4f4f4;
+    
+    /* 5. أهم خطوة: Shadow خفيف جداً (افتراضي) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    
+    /* 6. جعل أي حركة ناعمة ومريحة للعين */
+    transition: all 0.3s ease;
+    
+    /* لإلغاء أي تنسيق افتراضي للمتصفح (خاصة في select) */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* لتظبيط شكل السهم في الـ Select بعد ما ألغينا الافتراضي */
+select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    padding-right: 40px; /* مسافة للسهم */
+}
+
+/* 7. التأثير لما الماوس ييجي عليها (Hover) */
+input[type="text"]:hover,
+select:hover ,
+input[type="email"]:hover{
+    /* "تطلع سيكا برة" - نستخدم transform لتكبير بسيط جداً */
+    transform: scale(1.03); 
+    
+    /* نقوي الشادو عشان تبان إنها "قربت" */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    
+    /* تغيير لون الحدود للون براند (اختياري - أزرق فاتح) */
+    border-color: #f4f4f4;
+}
+
+/* 8. التأثير لما المستخدم يضغط جوه الخانة ويكتب (Focus) */
+input[type="text"]:focus,
+select:focus,
+input[type="email"]:focus {
+    outline: none; /* إلغاء الخط الأزرق الافتراضي البايخ */
+    border-color: #f4f4f4; /* نفس لون الـ hover */
+    background-color: #fff; /* خلفية بيضاء صريحة */
+    
+    /* تأكيد على التكبير والشادو */
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+}
+.cta,.p{
+    display: flex;
+    justify-content: center; /* سنترة الزراير */
+    align-items: center;
+    gap: 15px; /* مسافة بين الزرارين */
+    margin: 20px auto;
+    width: 15%; /* تحديد عرض ثابت وصغير عشان ميبقوش معرضين */
+    padding: 8px 0; /* طول مناسب مع عرض صغير */
+    border-radius: 20px; /* حواف دائرية زي باقي التصميم */
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* نعومة الحركة */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cta:hover,
+.p:hover{
+    background-color: white; 
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15)
+}
+.get{
+    justify-content: center;
+    text-align: center;
+}
+/* 1. تعريف حركة الظهور من أسفل لأعلى */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px); /* المسافة اللي بيطلع منها العنصر */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);   /* مكانه الطبيعي */
+    }
+}
+
+/* 2. الكلاس الأساسي (حطيه على أي عنصر عايزاه يتحرك) */
+.animate-me {
+    opacity: 0; /* بيبدأ مخفي */
+    animation: fadeInUp 0.7s ease-out forwards; /* forwards بتثبت الحركة في نهايتها */
+}
+
+/* 3. كلاسات التوقيت (الـ Delays) - الترتيب اللي هيظهروا بيه */
+
+/* يظهر الأول (مثلاً اللينك الأول أو عنوان الصفحة) */
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+/* يظهر التاني */
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+/* يظهر التالت (مثلاً الزراير) */
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* يظهر الرابع (مثلاً الجدول أو الفورم) */
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+/* كلاس إضافي لو عايزة الحركة تبقى أبطأ شوية لصفحات كاملة */
+.slow-fade {
+    animation-duration: 1.2s;
+}
+@media (max-width: 768px) {
+
+    /* nav يتحول عمودي */
+    .link nav {
+        gap: 5px;
+        align-items: center;
+    }
+    .link nav a{
+        font-size: 12px;
+    }
+
+    /* cards تحت بعض */
+    .features {
+        flex-direction: column;
+    }
+
+    /* الجدول يصغر */
+    table {
+        font-size: 9px;
+    }
+    .for{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    form{
+        width: 100%;
+    }
+
+    /* الفورم يبقى مريح */
+    input, select, textarea {
+        flex-direction: column;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* العناوين تبقى متوسطة */
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+
+
+

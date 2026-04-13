@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <div class="container">
+        <div class="first">
+            <header> 
+                <h1>Add Courses Page</h1>   
+            </header>
+        </div>
+        <div class="link">
+            <nav>
+                <a href="index.html" target ="_blank" class="animate-me delay-1">Home</a>
+                <a href="My Courses.html" target="_blank" class="animate-me delay-2">My Courses</a>
+                <a href="Add Courses.html" class="animate-me delay-3">Add courses</a>
+                <a href="Contact Us.html" target="_blank" class="animate-me delay-4">Contact us</a>
+            </nav>
+        </div>
+        <main>
+            <section>
+                <div class="add">
+                    <h2>Add course</h2>
+                </div>
+                <div class="animate-me delay-1">
+                    <form>
+                        <div class="for">
+                        <div>
+                            <label for="course_name" class="la">Couorse_Name</label>
+                            <input type="text"  id="course_name" placeholder="Enter course_name" required ><br><br>
+                        </div>
+                        <div>
+                            <label for="instructor" class="la">Instructor</label>
+                            <input type="text" id="instructor" placeholder="Instructor Name" required ><br><br>
+                        </div>
+                        <div>
+                            <label for="Credit_hour" class="la">Credit_hour</label>
+                            <select name="Credit_hour" id="Creditd_hour" required>
+                                <option value="" disabled selected hidden>Choose</option>
+                                <option value="1">One Hour</option>
+                                <option value="2">Two Hours</option>
+                                <option value="3">Three Hours</option>
+                            </select><br><br>
+                        </div>
+                        <div>    
+                            <label for="lecture_day" class="la">lecture_day</label>
+                            <select name="lecture_day" id="lecture_day" required>
+                                <option value="" disabled selected hidden>Choose</option>
+                                <option value="saturday">Saturday</option>
+                                <option value="sunday">Sunday</option>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                            </select><br><br>
+                        </div>
+                        </div>
+                        <div class="not">
+                            <label>Notes</label><br><br>
+                            <textarea></textarea><br><br>
+                        </div>
+                            <button type="submit" class="cta">Send</button>
+                            <button type="reset" class="cta">Delete</button>
+                    </form>
+                </div>    
+            </section>
+        </main>
+        <footer>
+            <div class="last">
+               <p>© 2026 Roqia Ali capital university</p>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>    
