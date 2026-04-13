@@ -365,15 +365,19 @@ input[type="email"]:focus {
 
     /* الجدول يصغر */
     table {
-        font-size: 9px;
+        font-size: 12px;
+        .main-page-content {
+             overflow-x: auto;
+        }
     }
-    .for{
+    .for ,.form{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
     form{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 
     /* الفورم يبقى مريح */
