@@ -375,10 +375,6 @@ input[type="email"]:focus {
         flex-direction: column;
         gap: 10px;
     }
-    form{
-        width: 80%;
-        margin: auto;
-    }
 
     /* الفورم يبقى مريح */
     input, select, textarea {
